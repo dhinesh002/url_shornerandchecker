@@ -142,9 +142,8 @@ tr.noborder td {
   margin: 20px 10px;
 }
 
-@media (max-width: 1028px) {
-
-   .bear{
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .bear{
     width:70%;}
 
    #output-title{
@@ -163,14 +162,18 @@ tr.noborder td {
 
   }
 
-
-  .pikachu{
-  width:100%;
-  padding-left:40%;
-  }
-}
- .link-input{
+   .link-input{
     align-item:center;
  }
 
-}
+
+
+
+
+
+
+
+
+
+
+                                                                }

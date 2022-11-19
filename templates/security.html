@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head >
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <style>
+  table, th, td {border:1px solid black; border-color: #96D4D4; font-size:2rem;}
+  </style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+  <body style="background-color:#ff4c68;color:white; padding:50px; padding-top;20px;">
+    <table style="width:100%;">
+      <tr class="noborder">
+        <th>WEBSITE</th>
+        <th>URL security</th>
+      </tr>
+
+      <tr>
+        <th>Name</th>
+        <th>{{ name }}</th>
+      </tr>
+
+      <tr>
+        <th>status</th>
+        <th>{{ status }}</th>
+      </tr>
+
+      <tr>
+        <th>child safety reputation</th>
+        <th>{{ child_d }}</th>
+      </tr>
+
+
+      <tr>
+        <th>child safety confidence</th>
+        <th>{{ child_c }}</th>
+      </tr>
+
+      <tr>
+        <th>safety reputation</th>
+        <th>{{ reputation }}</th>
+      </tr>
+
+      <tr>
+        <th>safety confidence</th>
+        <th>{{ confidence }}</th>
+      </tr>
+
+      <tr>
+        <th>trust</th>
+        <th>{{ trust }}</th>
+      </tr>
+
+      <tr>
+        <th>trust confidence</th>
+        <th>{{ trust_c }}</th>
+      </tr>
+
+      <tr>
+        <th>tracking</th>
+        <th>{{ track }}</th>
+      </tr>
+
+      <tr>
+        <th>track confidence</th>
+        <th>{{ track_c }}</th>
+      </tr>
+
+      <tr>
+        <th>service</th>
+        <th>{{ Service }}</th>
+
+      </tr>
+
+
+
+    </table>
+  </body>
+
+</html>

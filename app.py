@@ -5,7 +5,7 @@ import requests
 import datetime
 
 now = datetime.datetime.now()
-#print(now.year)
+
 year = now.year
 
 app = Flask(__name__)
@@ -28,7 +28,7 @@ def check():
     elif valid == True and len(web_address) < 30:
         return render_template('small.html')
     else:
-        return render_template('error.html')
+        return "something went wrong please try again"
 
 
 @app.route('/security', methods=['POST'])

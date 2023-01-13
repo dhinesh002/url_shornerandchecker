@@ -44,9 +44,12 @@
           <form ">
               <input class="col-sm-4 link-input out " style="height:40px;font-size:14pt;" type="url" name="URL" value="{{ output_url }}" size="60%">
 <!--              <button style="height:45px;font-size:14pt;" onclick="copyText()">Copy</button>-->
-              <button type="button" class="copy-link-button ">
+<!--               <button type="button" class="copy-link-button ">
                   <span class="material-symbols-outlined">content_copy</span>
-              </button>
+              </button> -->
+              <button type="button" class="copy-link-button" onclick="copyToClipboard()">
+                <span class="material-symbols-outlined">content_copy</span>
+            </button>                                           
           </form>
             <br>
             <br>
@@ -65,7 +68,8 @@
         const text = inputField.value;
 
         inputField.select();
-        navigator.clipboard.writeText(text);
+<!--         navigator.clipboard.writeText(text); -->
+        document.execCommand('copy');                                   
       });
     });
   </script>
